@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+
+.carousel1 {
+  position: relative;
+}
+
+.carousel1 .carousel-item {
+  height: 100%;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3.1s;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border: 1px double #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  background: #000000;
+  color: white;
+}
+.footer .links h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.footer .links ul {
+  list-style-type: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer .links ul li a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .links ul li a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.footer .about-company h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.footer .about-company .pr-5 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer .about-company i {
+  font-size: 25px;
+}
+.footer .about-company a {
+  color: white;
+  transition: color 0.2s;
+}
+.footer .about-company i:hover {
+  color: #4180cb;
+}
+.footer .location h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.footer .location .addr {
+  font-family: "Montserrat", sans-serif;
+}
+.footer .location i {
+  font-size: 18px;
+}
+.footer .location p span {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

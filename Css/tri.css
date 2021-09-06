@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Quicksand:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap");
+@font-face {
+  font-family: "Marvin Visions Variable";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/MarvinVisionsTrial-Variable.ttf");
+}
+
+/*.whole {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}*/
+
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.mynav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+}
+.logo {
+  cursor: pointer;
+  color: white;
+  letter-spacing: 5px;
+  font-family: "Marvin Visions Variable";
+  font-size: 30px;
+  --weight: 1;
+  padding-left: 40px;
+}
+.logo > * {
+  color: grey;
+  font-variation-settings: "wght" var(--weight);
+}
+.mynav1 {
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.mynav1 li {
+  display: inline-block;
+  padding: 0px 40px;
+  font-size: 18px;
+}
+.mynav1 li a {
+  transition: all 0.3s ease 0s;
+  color: white;
+  text-decoration: none;
+  transition: color 1s;
+}
+.mynav1 li a:hover {
+  color: #6b76ff;
+  border-bottom: 1px solid yellow;
+  font-weight: 600;
+}
+
+/* About */
+
+.about {
+  background-color: #f3f6f6;
+}
+
+.aboutcover {
+  padding: 80px 0px;
+}
+
+.about #about-section {
+  text-align: center;
+  color: black;
+  font-family: "Abril Fatface", cursive;
+  padding: 20px 0px;
+  text-decoration: underline;
+}
+
+.about .about-para {
+  text-align: left;
+  padding: 0px 180px 50px 180px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Cerifications */
+
+.certificate {
+  background-color: #90eee1;
+}
+
+.certificatecover {
+  padding: 80px 0px;
+}
+
+.certificate #certificate-section {
+  text-align: center;
+  color: black;
+  font-family: "Abril Fatface", cursive;
+  padding: 20px 0px;
+  text-decoration: underline;
+}
+
+.certificate .certificate-list {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.certificate .certificate-list .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.certificate .certificate-list .container .card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.certificate .certificate-list .container .card .content {
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.certificate .certificate-list .container .card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.certificate .certificate-list .container .card .content h2 {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  font-size: 7em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.certificate .certificate-list .container .card .content p {
+  margin-top: 50px;
+}
+
+/*.certificate .certificate-list .container .card .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 5px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}*/
+
+/*.whole .container {
+  background-color: lightgrey;
+}*/
+
+/* Skills */
+
+.skills {
+  background-color: #ffb997;
+}
+
+.skillscover {
+  padding: 80px 0px;
+}
+
+.skills #skills-section {
+  text-align: center;
+  color: black;
+  font-family: "Abril Fatface", cursive;
+  padding: 20px 0px;
+  text-decoration: underline;
+}
+
+.skills .skills-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills .skills-list .skill-one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.skills .skills-list .skill-one .outer-one {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.skills .skills-list .skill-one .outer-one .inner-one {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.skills .skills-list .skill-one .outer-one .inner-one #skill-one-count {
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+svg {
+  position: absolute;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: counter 2s linear forwards;
+}
+
+@keyframes counter {
+  100% {
+    stroke-dashoffset: 44;
+  }
+}
+
+/* FOR OTHER DEVICE */
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .whole {
+    width: 100%;
+    padding: 0;
+  }
+  .lay1,
+  .carousel1,
+  .navbar,
+  .about {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .lay1,
+  .whole,
+  .navbar,
+  .carousel1,
+  .about {
+    width: 100%;
+  }
+  .navbar .navbar-nav {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  .navbar .navbar-nav .nav-link {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+  }
+}
